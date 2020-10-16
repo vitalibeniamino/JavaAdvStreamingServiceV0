@@ -6,9 +6,13 @@ public enum Rating {
     TEENS(12),
     MATURE(16);
 
-    private int age;
+    private int minimumAge;
 
-    Rating(int age) {
-        this.age = age;
+    Rating(int minimumAge) {
+        this.minimumAge = minimumAge;
+    }
+
+    public int getMinimumAge() {
+        return minimumAge;
     }
 }
